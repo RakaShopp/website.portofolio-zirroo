@@ -8,3 +8,10 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer) {
   });
 }, appearOptions);
 faders.forEach(fader => appearOnScroll.observe(fader));
+<script>
+  function playSong(url) {
+    const player = document.getElementById("audioPlayer");
+    player.src = url;
+    player.play();
+  }
+</script>
