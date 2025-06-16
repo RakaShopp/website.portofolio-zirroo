@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Nama Kamu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <a href="#">🏠 Beranda</a>
+    <a href="#">👤 Tentang Kami</a>
+  </div>
+  <div class="hamburger" onclick="toggleSidebar()">☰</div>
+
+  <header>
+    <img src="https://via.placeholder.com/100" alt="Foto Profil"/>
+    <h1>Nama Kamu</h1>
+    <h2>Web Developer | Freelancer | Kreator</h2>
+  </header>
+
+  <div class="content">
+    <section class="fade-in">
+      <h3>📅 Berita / Update</h3>
+      <ul>
+        <li>🔥 Proyek website toko online 2025 selesai</li>
+        <li>🌿 Buka jasa pembuatan landing page</li>
+        <li>✅ Tambah fitur galeri di web portofolio</li>
+      </ul>
+    </section>
+
+    <section class="fade-in">
+      <h3>🎵 Playlist Lagu Favorit</h3>
+      <ul>
+        <li><a href="#" onclick="playSong('https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/KieLoKaz/Free_Sample_Pack/KieLoKaz_-_07_-_Groove_Gadget.mp3')">🎧 Lagu 1 - Groove Gadget</a></li>
+        <li><a href="#" onclick="playSong('https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Komiku/It_just_is/Komiku_-_08_-_Growing_Up.mp3')">🎵 Lagu 2 - Growing Up</a></li>
+      </ul>
+      <audio id="audioPlayer" style="display: none;"></audio>
+    </section>
+
+    <section class="fade-in">
+      <h3>🎨 Proyek & Link</h3>
+      <ul>
+        <li><a href="#">Website Portofolio</a></li>
+        <li><a href="#">GitHub: username</a></li>
+        <li><a href="#">Behance Design</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
